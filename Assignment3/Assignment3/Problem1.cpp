@@ -1,5 +1,5 @@
 // Stewart Dulaney
-// 3/17/2018
+// 3/21/2018
 // CS 52 Section 4110
 // SID: 1545566
 // Assignment 3
@@ -37,12 +37,14 @@ void print_array(int a[], int size);
 
 int main()
 {
-    int arr[ARRAY_SIZE];
+    int* arr;
+    arr = new int[ARRAY_SIZE];
     cout << "Enter 10 integers:\n";
     fill_array(arr, ARRAY_SIZE);
     sort(arr, ARRAY_SIZE);
     cout << "\nSorted:\n";
     print_array(arr, ARRAY_SIZE);
+    delete [] arr;
     
     return 0;
 }
