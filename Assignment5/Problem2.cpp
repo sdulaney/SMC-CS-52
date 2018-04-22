@@ -8,13 +8,14 @@
 
 using namespace std;
 
-int fac(int n);
+long fac(int n);
 // Precondition: n >= 0 and n < 100.
 // Returns the value of n!.
 
 int main()
 {
-    int userInput, factorial;
+    int userInput;
+    long factorial;
     cout << "Please enter a number: ";
     cin >> userInput;
     try {
@@ -27,7 +28,7 @@ int main()
     return 0;
 }
 
-int fac(int n)
+long fac(int n)
 {
     if (n < 0)
     {
