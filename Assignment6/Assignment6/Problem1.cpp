@@ -7,6 +7,7 @@
 // Problem 1
 #include <iostream>
 #include "Item.hpp"
+#include "Book.hpp"
 
 using namespace std;
 
