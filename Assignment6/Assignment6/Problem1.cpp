@@ -1,3 +1,4 @@
+// File: Problem1.cpp
 // Stewart Dulaney
 // 5/2/2018
 // CS 52 Section 4110
@@ -5,6 +6,7 @@
 // Assignment 6
 // Problem 1
 #include <iostream>
+#include "Item.hpp"
 
 using namespace std;
 
