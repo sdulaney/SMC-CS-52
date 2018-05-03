@@ -11,12 +11,13 @@
 #include "Movie.hpp"
 #include "CD.hpp"
 #include "ShoppingCart.hpp"
+#include "Customer.hpp"
 
 using namespace std;
 
 int main()
 {
-
+    
     
     return 0;
 }
