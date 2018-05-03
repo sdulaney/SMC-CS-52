@@ -9,6 +9,7 @@
 #include "Item.hpp"
 #include "Book.hpp"
 #include "Movie.hpp"
+#include "CD.hpp"
 
 using namespace std;
 
