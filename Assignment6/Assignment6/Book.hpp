@@ -9,7 +9,9 @@
 #ifndef Book_hpp
 #define Book_hpp
 
-class Book
+#include "Item.hpp"
+
+class Book : public Item
 {
 private:
     int pageCount;
