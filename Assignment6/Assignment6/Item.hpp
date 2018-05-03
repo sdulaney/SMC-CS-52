@@ -19,7 +19,6 @@ private:
     string title;
     string description;
     double price;
-    
 public:
     Item();
     ~Item();
