@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Item.hpp"
 #include "Book.hpp"
+#include "Movie.hpp"
 
 using namespace std;
 
