@@ -17,7 +17,7 @@ class ShoppingCart
 {
 private:
     Item cartContents[MAX_CART_SIZE];
-    int numItems;
+    int numItems = 0;
 public:
     ShoppingCart();
     ~ShoppingCart();
