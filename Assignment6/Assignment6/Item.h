@@ -1,4 +1,4 @@
-// File: Item.hpp
+// File: Item.h
 // Stewart Dulaney
 // 5/2/2018
 // CS 52 Section 4110
