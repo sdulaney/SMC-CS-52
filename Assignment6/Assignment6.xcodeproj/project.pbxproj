@@ -32,17 +32,17 @@
 		8D5EDB40209A9CE7008085EF /* Assignment6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment6; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5EDB4A209A9D29008085EF /* Problem1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Problem1.cpp; sourceTree = "<group>"; };
 		8D5EDB4C209A9DE0008085EF /* Item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
-		8D5EDB4D209A9DE0008085EF /* Item.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Item.hpp; sourceTree = "<group>"; };
+		8D5EDB4D209A9DE0008085EF /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		8D5EDB4F209AA1C2008085EF /* Book.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Book.cpp; sourceTree = "<group>"; };
-		8D5EDB50209AA1C2008085EF /* Book.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Book.hpp; sourceTree = "<group>"; };
+		8D5EDB50209AA1C2008085EF /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		8D5EDB52209AA346008085EF /* Movie.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Movie.cpp; sourceTree = "<group>"; };
-		8D5EDB53209AA346008085EF /* Movie.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Movie.hpp; sourceTree = "<group>"; };
+		8D5EDB53209AA346008085EF /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		8D5EDB55209AA520008085EF /* CD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CD.cpp; sourceTree = "<group>"; };
-		8D5EDB56209AA520008085EF /* CD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CD.hpp; sourceTree = "<group>"; };
+		8D5EDB56209AA520008085EF /* CD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CD.h; sourceTree = "<group>"; };
 		8D5EDB58209AA65D008085EF /* ShoppingCart.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShoppingCart.cpp; sourceTree = "<group>"; };
-		8D5EDB59209AA65D008085EF /* ShoppingCart.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShoppingCart.hpp; sourceTree = "<group>"; };
+		8D5EDB59209AA65D008085EF /* ShoppingCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
 		8D5EDB5B209AA932008085EF /* Customer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
-		8D5EDB5C209AA932008085EF /* Customer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
+		8D5EDB5C209AA932008085EF /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,17 +77,17 @@
 			children = (
 				8D5EDB4A209A9D29008085EF /* Problem1.cpp */,
 				8D5EDB4C209A9DE0008085EF /* Item.cpp */,
-				8D5EDB4D209A9DE0008085EF /* Item.hpp */,
+				8D5EDB4D209A9DE0008085EF /* Item.h */,
 				8D5EDB4F209AA1C2008085EF /* Book.cpp */,
-				8D5EDB50209AA1C2008085EF /* Book.hpp */,
+				8D5EDB50209AA1C2008085EF /* Book.h */,
 				8D5EDB52209AA346008085EF /* Movie.cpp */,
-				8D5EDB53209AA346008085EF /* Movie.hpp */,
+				8D5EDB53209AA346008085EF /* Movie.h */,
 				8D5EDB55209AA520008085EF /* CD.cpp */,
-				8D5EDB56209AA520008085EF /* CD.hpp */,
+				8D5EDB56209AA520008085EF /* CD.h */,
 				8D5EDB58209AA65D008085EF /* ShoppingCart.cpp */,
-				8D5EDB59209AA65D008085EF /* ShoppingCart.hpp */,
+				8D5EDB59209AA65D008085EF /* ShoppingCart.h */,
 				8D5EDB5B209AA932008085EF /* Customer.cpp */,
-				8D5EDB5C209AA932008085EF /* Customer.hpp */,
+				8D5EDB5C209AA932008085EF /* Customer.h */,
 			);
 			path = Assignment6;
 			sourceTree = "<group>";

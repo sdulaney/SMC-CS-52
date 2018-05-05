@@ -6,7 +6,7 @@
 // Assignment 6
 // Problem 1
 
-#include "Book.hpp"
+#include "Book.h"
 
 Book::Book()
 {

@@ -6,10 +6,10 @@
 // Assignment 6
 // Problem 1
 
-#ifndef Book_hpp
-#define Book_hpp
+#ifndef Book_h
+#define Book_h
 
-#include "Item.hpp"
+#include "Item.h"
 
 class Book : public Item
 {
@@ -22,4 +22,4 @@ public:
     void setPageCount(int pageCount);
 };
 
-#endif /* Book_hpp */
+#endif /* Book_h */

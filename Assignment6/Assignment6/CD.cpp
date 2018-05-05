@@ -6,7 +6,7 @@
 // Assignment 6
 // Problem 1
 
-#include "CD.hpp"
+#include "CD.h"
 
 CD::CD()
 {

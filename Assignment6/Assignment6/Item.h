@@ -6,8 +6,8 @@
 // Assignment 6
 // Problem 1
 
-#ifndef Item_hpp
-#define Item_hpp
+#ifndef Item_h
+#define Item_h
 
 #include <string>
 
@@ -30,4 +30,4 @@ public:
     void setPrice(double price);
 };
 
-#endif /* Item_hpp */
+#endif /* Item_h */

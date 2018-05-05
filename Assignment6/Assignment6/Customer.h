@@ -6,10 +6,10 @@
 // Assignment 6
 // Problem 1
 
-#ifndef Customer_hpp
-#define Customer_hpp
+#ifndef Customer_h
+#define Customer_h
 
-#include "ShoppingCart.hpp"
+#include "ShoppingCart.h"
 
 class Customer
 {
@@ -31,4 +31,4 @@ public:
     void setPtrCart(ShoppingCart* ptrCart);
 };
 
-#endif /* Customer_hpp */
+#endif /* Customer_h */

@@ -6,7 +6,7 @@
 // Assignment 6
 // Problem 1
 
-#include "Customer.hpp"
+#include "Customer.h"
 
 Customer::Customer()
 {

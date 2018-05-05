@@ -6,10 +6,10 @@
 // Assignment 6
 // Problem 1
 
-#ifndef Movie_hpp
-#define Movie_hpp
+#ifndef Movie_h
+#define Movie_h
 
-#include "Item.hpp"
+#include "Item.h"
 
 class Movie : public Item
 {
@@ -22,4 +22,4 @@ public:
     void setLength(double length);
 };
 
-#endif /* Movie_hpp */
+#endif /* Movie_h */

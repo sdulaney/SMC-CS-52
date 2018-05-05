@@ -6,7 +6,7 @@
 // Assignment 6
 // Problem 1
 
-#include "Movie.hpp"
+#include "Movie.h"
 
 Movie::Movie()
 {

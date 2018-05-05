@@ -6,10 +6,10 @@
 // Assignment 6
 // Problem 1
 
-#ifndef ShoppingCart_hpp
-#define ShoppingCart_hpp
+#ifndef ShoppingCart_h
+#define ShoppingCart_h
 
-#include "Item.hpp"
+#include "Item.h"
 
 const int MAX_CART_SIZE = 50;
 
@@ -31,4 +31,4 @@ public:
     // console.
 };
 
-#endif /* ShoppingCart_hpp */
+#endif /* ShoppingCart_h */

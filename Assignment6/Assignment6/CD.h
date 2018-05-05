@@ -6,10 +6,10 @@
 // Assignment 6
 // Problem 1
 
-#ifndef CD_hpp
-#define CD_hpp
+#ifndef CD_h
+#define CD_h
 
-#include "Item.hpp"
+#include "Item.h"
 
 class CD : public Item
 {
@@ -22,4 +22,4 @@ public:
     void setTrackCount(int trackCount);
 };
 
-#endif /* CD_hpp */
+#endif /* CD_h */

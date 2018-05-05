@@ -6,12 +6,12 @@
 // Assignment 6
 // Problem 1
 #include <iostream>
-#include "Item.hpp"
-#include "Book.hpp"
-#include "Movie.hpp"
-#include "CD.hpp"
-#include "ShoppingCart.hpp"
-#include "Customer.hpp"
+#include "Item.h"
+#include "Book.h"
+#include "Movie.h"
+#include "CD.h"
+#include "ShoppingCart.h"
+#include "Customer.h"
 
 using namespace std;
 
