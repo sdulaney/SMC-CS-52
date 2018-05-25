@@ -20,6 +20,10 @@ bool isPrime(int n);
 // are one and itself.
 // Returns true if n is a prime number.
 
+int nthFibonacci(int n);
+// Precondition: n >= 0.
+// Returns the nth number in the Fibonacci series.
+
 int main()
 {
     int n;
@@ -61,5 +65,19 @@ bool isPrime(int n)
         }
     }
     return true;
+}
+
+int nthFibonacci(int n)
+{
+    if (n < 0)
+    {
+        cout << "Error! Parameter n must be greater than or equal to 0.\n";
+        exit(1);
+    }
+    if (n <= 1)
+    {
+        return n;
+    }
+    return (nthFibonacci(n - 1) + nthFibonacci(n - 2));
 }
 
