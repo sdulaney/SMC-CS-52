@@ -24,6 +24,10 @@ int nthFibonacci(int n);
 // Precondition: n >= 0.
 // Returns the nth number in the Fibonacci series.
 
+int getNthFibonacciPrime(int n);
+// Precondition: n > 0.
+// Returns the nth prime number in the Fibonacci series.
+
 int main()
 {
     int n;
@@ -80,5 +84,32 @@ int nthFibonacci(int n)
         return n;
     }
     return (nthFibonacci(n - 1) + nthFibonacci(n - 2));
+}
+
+// Uses iostream, cstdlib
+int getNthFibonacciPrime(int n)
+{
+    if (n <= 0)
+    {
+        cout << "Error! Parameter n must be greater than 0.\n";
+        exit(1);
+    }
+    int fib = 2;
+    int i = 3;          // 2 is the 3rd Fibonacci number
+    int numPrimes = 1;  // 2 is the 1st prime number
+    do
+    {
+        if (numPrimes == n)
+        {
+            return fib;
+        }
+        i++;
+        fib = nthFibonacci(i);
+        if (isPrime(fib))
+        {
+            numPrimes++;
+        }
+    } while (fib < INT_MAX);
+    return -1;
 }
 
