@@ -21,6 +21,7 @@ int main()
     return 0;
 }
 
+// Uses iostream
 void getNaturalNumber(int& n)
 {
     cout << "Input: ";
