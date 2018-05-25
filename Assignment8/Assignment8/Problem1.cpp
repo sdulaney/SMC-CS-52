@@ -6,6 +6,7 @@
 // Problem 1
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
 using namespace std;
 
@@ -27,6 +28,11 @@ int nthFibonacci(int n);
 int getNthFibonacciPrime(int n);
 // Precondition: n > 0.
 // Returns the nth prime number in the Fibonacci series.
+
+string getOrdinalNumberSuffix(int n);
+// Precondition: n >= 0;
+// Returns the ordinal number suffix for n, e.g. returns "st" for
+// n=1, "nd" for n=2, "rd" for n=3, etc.
 
 int main()
 {
@@ -113,3 +119,34 @@ int getNthFibonacciPrime(int n)
     return -1;
 }
 
+// Uses iostream, string, cstdlib
+string getOrdinalNumberSuffix(int n)
+{
+    if (n < 0)
+    {
+        cout << "Error! Parameter n must be greater than or equal to 0.\n";
+        exit(1);
+    }
+    string result;
+    if ((n % 100 >= 11) && (n % 100 <= 20))
+    {
+        result = "th";
+    }
+    else if (n % 10 == 1)
+    {
+        result = "st";
+    }
+    else if (n % 10 == 2)
+    {
+        result = "nd";
+    }
+    else if (n % 10 == 3)
+    {
+        result = "rd";
+    }
+    else
+    {
+        result = "th";
+    }
+    return result;
+}
