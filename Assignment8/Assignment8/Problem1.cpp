@@ -38,6 +38,8 @@ int main()
 {
     int n;
     getNaturalNumber(n);
+    int nthFibonacciPrime = getNthFibonacciPrime(n);
+    cout << n << getOrdinalNumberSuffix(n) << " Fibonacci prime: " << nthFibonacciPrime << endl;
     
     return 0;
 }
