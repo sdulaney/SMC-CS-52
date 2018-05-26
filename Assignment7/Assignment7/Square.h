@@ -23,9 +23,6 @@ public:
     void setSide(double side);
     double area();
     // Returns the area of the square.
-    void print();
-    // Prints the name and total area of the square to
-    // the console.
 };
 
 #endif /* Square_h */

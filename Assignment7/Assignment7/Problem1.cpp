@@ -90,7 +90,7 @@ void printShapeArray(Shape* arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        arr[i]->print();
+        cout << "Name: " << arr[i]->getName() << "\nTotal Area: " << arr[i]->area() << endl;
     }
 }
 

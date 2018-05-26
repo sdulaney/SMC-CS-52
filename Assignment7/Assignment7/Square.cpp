@@ -11,12 +11,12 @@
 
 using namespace std;
 
-Square::Square(double s) : side(s)
+Square::Square(double s) : Shape("Square"), side(s)
 {
     
 }
 
-Square::Square() : side(0.0)
+Square::Square() : Shape("Square"), side(0.0)
 {
     
 }
@@ -39,9 +39,4 @@ void Square::setSide(double side)
 double Square::area()
 {
     return side * side;
-}
-
-void Square::print()
-{
-    cout << "Name: Square\n" << "Total Area: " << this->area() << endl;
 }

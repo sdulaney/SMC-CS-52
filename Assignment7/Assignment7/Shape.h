@@ -9,14 +9,22 @@
 #ifndef Shape_h
 #define Shape_h
 
+#include <string>
+
+using namespace std;
+
 class Shape
 {
+private:
+    string name;
 public:
     Shape();
+    Shape(string name);
     ~Shape();
+    string getName();
+    void setName(string name);
     virtual double area();
     // Returns the double value 0.0.
-    virtual void print();
 };
 
 #endif /* Shape_h */

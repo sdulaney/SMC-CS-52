@@ -11,12 +11,12 @@
 
 using namespace std;
 
-Rectangle::Rectangle(double l, double w) : length(l), width(w)
+Rectangle::Rectangle(double l, double w) : Shape("Rectangle"), length(l), width(w)
 {
     
 }
 
-Rectangle::Rectangle() : length(0.0), width(0.0)
+Rectangle::Rectangle() : Shape("Rectangle"), length(0.0), width(0.0)
 {
     
 }
@@ -49,9 +49,4 @@ void Rectangle::setWidth(double width)
 double Rectangle::area()
 {
     return length * width;
-}
-
-void Rectangle::print()
-{
-    cout << "Name: Rectangle\n" << "Total Area: " << this->area() << endl;
 }

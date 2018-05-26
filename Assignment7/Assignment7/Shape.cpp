@@ -10,7 +10,12 @@
 
 Shape::Shape()
 {
-    
+    this->name = "";
+}
+
+Shape::Shape(string name)
+{
+    this->name = name;
 }
 
 Shape::~Shape()
@@ -18,12 +23,17 @@ Shape::~Shape()
     
 }
 
+string Shape::getName()
+{
+    return this->name;
+}
+
+void Shape::setName(string name)
+{
+    this->name = name;
+}
+
 double Shape::area()
 {
     return 0.0;
-}
-
-void Shape::print()
-{
-    
 }

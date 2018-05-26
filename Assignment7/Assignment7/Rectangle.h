@@ -26,9 +26,6 @@ public:
     void setWidth(double width);
     double area();
     // Returns the area of the rectangle.
-    void print();
-    // Prints the name and total area of the rectangle to
-    // the console.
 };
 
 #endif /* Rectangle_h */

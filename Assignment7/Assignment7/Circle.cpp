@@ -13,12 +13,12 @@ using namespace std;
 
 const double PI = 3.14159;
 
-Circle::Circle(double r) : radius(r)
+Circle::Circle(double r) : Shape("Circle"), radius(r)
 {
     
 }
 
-Circle::Circle() : radius(0.0)
+Circle::Circle() : Shape("Circle"), radius(0.0)
 {
     
 }
@@ -41,9 +41,4 @@ void Circle::setRadius(double radius)
 double Circle::area()
 {
     return PI * radius * radius;
-}
-
-void Circle::print()
-{
-    cout << "Name: Circle\n" << "Total Area: " << this->area() << endl;
 }
