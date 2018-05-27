@@ -11,12 +11,12 @@
 
 using namespace std;
 
-Square::Square(double s) : Shape("Square"), side(s)
+Square::Square() : Shape("Square"), side(0.0)
 {
     
 }
 
-Square::Square() : Shape("Square"), side(0.0)
+Square::Square(double s) : Shape("Square"), side(s)
 {
     
 }

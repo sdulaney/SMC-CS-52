@@ -13,12 +13,12 @@ using namespace std;
 
 const double PI = 3.14159;
 
-Circle::Circle(double r) : Shape("Circle"), radius(r)
+Circle::Circle() : Shape("Circle"), radius(0.0)
 {
     
 }
 
-Circle::Circle() : Shape("Circle"), radius(0.0)
+Circle::Circle(double r) : Shape("Circle"), radius(r)
 {
     
 }

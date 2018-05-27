@@ -16,8 +16,8 @@ class Square : public Shape
 private:
     double side;
 public:
-    Square(double s);
     Square();
+    Square(double s);
     ~Square();
     double getSide();
     void setSide(double side);

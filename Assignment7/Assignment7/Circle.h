@@ -16,8 +16,8 @@ class Circle : public Shape
 private:
     double radius;
 public:
-    Circle(double r);
     Circle();
+    Circle(double r);
     ~Circle();
     double getRadius();
     void setRadius(double radius);

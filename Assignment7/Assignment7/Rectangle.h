@@ -17,8 +17,8 @@ private:
     double length;
     double width;
 public:
-    Rectangle(double l, double w);
     Rectangle();
+    Rectangle(double l, double w);
     ~Rectangle();
     double getLength();
     void setLength(double length);

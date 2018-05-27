@@ -11,12 +11,12 @@
 
 using namespace std;
 
-Rectangle::Rectangle(double l, double w) : Shape("Rectangle"), length(l), width(w)
+Rectangle::Rectangle() : Shape("Rectangle"), length(0.0), width(0.0)
 {
     
 }
 
-Rectangle::Rectangle() : Shape("Rectangle"), length(0.0), width(0.0)
+Rectangle::Rectangle(double l, double w) : Shape("Rectangle"), length(l), width(w)
 {
     
 }
