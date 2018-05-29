@@ -1,6 +1,6 @@
 // File: Rectangle.cpp
 // Stewart Dulaney
-// 5/26/2018
+// 5/29/2018
 // CS 52 Section 4110
 // SID: 1545566
 // Assignment 7
