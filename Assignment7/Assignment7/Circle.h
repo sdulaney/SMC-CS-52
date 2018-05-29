@@ -19,9 +19,9 @@ public:
     Circle();
     Circle(double r);
     ~Circle();
-    double getRadius();
+    double getRadius() const;
     void setRadius(double radius);
-    double area();
+    double area() const;
     // Returns the area of the circle.
 };
 

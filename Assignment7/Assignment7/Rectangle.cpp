@@ -26,7 +26,7 @@ Rectangle::~Rectangle()
     
 }
 
-double Rectangle::getLength()
+double Rectangle::getLength() const
 {
     return this->length;
 }
@@ -36,7 +36,7 @@ void Rectangle::setLength(double length)
     this->length = length;
 }
 
-double Rectangle::getWidth()
+double Rectangle::getWidth() const
 {
     return this->width;
 }
@@ -46,7 +46,7 @@ void Rectangle::setWidth(double width)
     this->width = width;
 }
 
-double Rectangle::area()
+double Rectangle::area() const
 {
     return length * width;
 }

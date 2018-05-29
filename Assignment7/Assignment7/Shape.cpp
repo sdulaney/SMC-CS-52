@@ -23,7 +23,7 @@ Shape::~Shape()
     
 }
 
-string Shape::getName()
+string Shape::getName() const
 {
     return this->name;
 }
@@ -33,7 +33,7 @@ void Shape::setName(string name)
     this->name = name;
 }
 
-double Shape::area()
+double Shape::area() const
 {
     return 0.0;
 }

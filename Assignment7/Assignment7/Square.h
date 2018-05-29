@@ -19,9 +19,9 @@ public:
     Square();
     Square(double s);
     ~Square();
-    double getSide();
+    double getSide() const;
     void setSide(double side);
-    double area();
+    double area() const;
     // Returns the area of the square.
 };
 

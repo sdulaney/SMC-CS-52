@@ -20,11 +20,11 @@ public:
     Rectangle();
     Rectangle(double l, double w);
     ~Rectangle();
-    double getLength();
+    double getLength() const;
     void setLength(double length);
-    double getWidth();
+    double getWidth() const;
     void setWidth(double width);
-    double area();
+    double area() const;
     // Returns the area of the rectangle.
 };
 

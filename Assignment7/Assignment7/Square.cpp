@@ -26,7 +26,7 @@ Square::~Square()
     
 }
 
-double Square::getSide()
+double Square::getSide() const
 {
     return this->side;
 }
@@ -36,7 +36,7 @@ void Square::setSide(double side)
     this->side = side;
 }
 
-double Square::area()
+double Square::area() const
 {
     return side * side;
 }

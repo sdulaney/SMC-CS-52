@@ -21,9 +21,9 @@ public:
     Shape();
     Shape(string name);
     ~Shape();
-    string getName();
+    string getName() const;
     void setName(string name);
-    virtual double area();
+    virtual double area() const;
     // Returns the double value 0.0.
 };
 

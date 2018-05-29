@@ -28,7 +28,7 @@ Circle::~Circle()
     
 }
 
-double Circle::getRadius()
+double Circle::getRadius() const
 {
     return this->radius;
 }
@@ -38,7 +38,7 @@ void Circle::setRadius(double radius)
     this->radius = radius;
 }
 
-double Circle::area()
+double Circle::area() const
 {
     return PI * radius * radius;
 }
