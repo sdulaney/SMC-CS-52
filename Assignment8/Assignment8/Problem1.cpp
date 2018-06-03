@@ -10,9 +10,9 @@
 
 using namespace std;
 
-void getNaturalNumber(int& n);
+int getNaturalNumber();
 // Prompts the user to enter a positive integer until one is
-// entered. Sets n equal to the natural number value input by
+// entered. Returns the natural number value input by
 // the user.
 
 bool isPrime(int n);
@@ -36,8 +36,7 @@ string getOrdinalNumberSuffix(int n);
 
 int main()
 {
-    int n;
-    getNaturalNumber(n);
+    int n = getNaturalNumber();
     int nthFibonacciPrime = getNthFibonacciPrime(n);
     cout << n << getOrdinalNumberSuffix(n) << " Fibonacci prime: " << nthFibonacciPrime << endl;
     
@@ -45,7 +44,7 @@ int main()
 }
 
 // Uses iostream
-void getNaturalNumber(int& n)
+int getNaturalNumber()
 {
     cout << "Input: ";
     int userInput;
@@ -58,7 +57,7 @@ void getNaturalNumber(int& n)
             cin >> userInput;
         }
     } while (userInput <= 0);
-    n = userInput;
+    return userInput;
 }
 
 // Uses iostream, cstdlib
