@@ -1,0 +1,43 @@
+CHAPTER 4: PROCEDURAL ABSTRACTION AND FUNCTIONS THAT RETURN A VALUE
+
+- 4.1 Top-Down Design
+  - Top-down design is a method in which you break down the task to be accomplished into a few subtasks, decompose each of these subtasks into smaller subtasks, and eventually the subtasks become so small that they are trivial to implement in C++
+- 4.2 Predefined Functions
+  - Using Predefined Functions
+    - The value the function starts out with is called its argument
+    - The  value it computes is called the value returned
+    - A function call or invocation is an expression consisting of the function name followed by arguments enclosed in parentheses
+    - Include directives specify the name of a file known as a header file for a given library
+    - Include directives are processed by the preprocessor
+    - Some predefined functions from `#include <cmath>`: sqrt, pow, fabs, ceil, floor
+    - Some predefined functions from `#include <cstdlib>`: abs, labs, srand, rand
+  - Random Number Generation
+  - Type Casting
+  - Older Form of Type Casting
+  - Pitfall: Integer Division Drops the Fractional Part
+- 4.3 Programmer-Defined Functions
+  - Function Definitions
+  - Functions That Return a Boolean Value
+  - Alternate Form for Function Declarations
+  - Pitfall: Arguments in the Wrong Order
+  - Function Definition— Syntax Summary
+  - More About Placement of Function Definitions
+  - Programming Tip: Use Function Calls in Branching Statements
+- 4.4 Procedural Abstraction
+  - The Black-Box Analogy
+  - Programming Tip: Choosing Formal Parameter Names
+  - Programming Tip: Nested Loops
+  - Case Study: Buying Pizza
+  - Programming Tip: Use Pseudocode
+- 4.5 Scope and Local Variables
+  - The Small Program Analogy
+  - Programming Example: Experimental Pea Patch
+  - Global Constants and Global Variables
+  - Call-by-Value Formal Parameters Are Local Variables
+  - Block Scope
+  - Namespaces Revisited
+  - Programming Example: The Factorial Function
+- 4.6 Overloading and Function Names
+  - Introduction to Overloading
+  - Programming Example: Revised Pizza-Buying Program
+  - Automatic Type Conversion

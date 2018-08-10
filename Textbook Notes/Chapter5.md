@@ -1,0 +1,61 @@
+CHAPTER 5: FUNCTIONS FOR ALL SUBTASKS
+
+- 5.1 void Functions
+  - Subtasks are implemented as functions in C++
+  - Some kinds of subtasks that produce no values for the rest of the program to use, such as outputting the results of a calculation, would be implemented as a void function
+  - Definitions of void functions
+    - void functions use the keyword void where we would normally specify the type of value to be returned
+    - the return statement in a void function does not contain an expression for a value to be returned
+  - Programming Example: Converting Temperatures
+  - return Statements in void Functions
+    - In void functions a return statement simply ends the function call
+    - Void functions do not need to have a return statement
+    - The main part of a program is actually the definition of a function called main
+- 5.2 Call-By-Reference Parameters
+  - A First View of Call-by-Reference
+    - With a call-by-reference formal parameter, the corresponding argument in a function call must be a variable and this argument variable is substituted for the formal parameter
+    - A call-by-reference formal parameter is indicated by attaching the ampersand sign, &, to the end of the type name in the formal parameter list in both the function declaration and the header of the function definition
+    - Any change made to the formal parameter in the function body will be made to the argument variable when the function is called
+  - Call-by-Reference in Detail
+    - When a function call is executed, the function is given the memory locations associated with each name; it is these memory locations that are associated with the formal parameters
+  - Programming Example: The swapValues Function
+  - Mixed Parameter Lists
+    - It is perfectly legitimate to mix call-by-value and call-by-reference formal parameters in the same function
+  - Programming Tip: What Kind of Parameter to Use
+    - If you want a function to change the value of a variable, then the corresponding formal parameter must be a call-by-reference formal parameter and must be marked with the ampersand sign, &; in all other cases you can use a call-by-value formal parameter
+  - Pitfall: Inadvertent Local Variables
+    - Carelessly omitting the ampersand, &, for a formal parameter intended to be call-by-reference results in a logic error that can be very difficult to see because it looks right
+- 5.3 Using Procedural Abstraction
+  - Functions Calling Functions
+    - A function body may contain a call to another function
+    - The only restriction is that the function declaration should appear before the function is used; this will happen automatically if you place all function declarations before the main function and all function definitions after the main function
+  - Preconditions and Postconditions
+    - The precondition states what is assumed to be true when the function is called
+    - The postcondition describes the effect of the function call; it tells what will be true after the function is executed in a situation in which the precondition holds
+    - When you design a program, you should specify what each function does before you start designing how the function will do it; the function declaration comments and the function declaration should be designed and written down before starting to design the function body
+  - Case Study: Supermarket Pricing
+    - Program design elements: Problem Definition, Input, Output, Analysis of the Problem, Algorithm Design, Coding
+    - Program Testing
+      - Test all "kinds" of input
+      - Test boundary values and input that is one step away from the boundary value as well
+- 5.4 Testing and Debugging Functions
+  - Stubs and Drivers
+    - Driver programs are special programs written to test an individual function; their job is to obtain reasonable values for the function arguments in as simple a way as possible— typically from the user— then execute the function and show the result
+    - Stubs are a simplified version of a missing or untested function; they are used when it is impossible or inconvenient to test a function without using some other function that has not yet been written or has not yet been tested
+    - Using a program outline with stubs allows you to test and then "flesh out" the basic program outline, which is usually the most efficient method of testing
+- 5.5 General Debugging Techniques
+  - Keep an Open Mind
+    - Examine the system as a whole and don't assume that the bug occurs in one particular place
+    - Avoid at all costs randomly changing portions of the code hoping it will fix the error
+    - A fresh set of eyes can sometimes quickly pinpoint an error you've been missing
+    - Returning to the problem a few hours or a day later can also sometimes help
+  - Check Common Errors
+    - One of the first mistakes you should look for are common errors that are easy to make
+  - Localize the Error
+    - Determine the precise cause and location of a bug in order to fix the error
+    - One technique is to add cout statements to strategic locations in the program that print out the values for critical variables
+    - Many compilers and IDEs include a separate program, a debugger, that allows the programmer to stop execution of the program at a specific line of code called a breakpoint, and step through the execution of the code one line at a time
+    - As the debugger steps through the code, the programmer can inspect the contents of variables and even manually change the values stored in those variables
+  - The assert Macro
+    - The assert macro (`#include <cassert>`) is a tool to ensure that the expected conditions are true at the location of the assert statement; if the condition is not met, then the program will display an error message and abort
+    - You can disable all assert macros by adding the following line to the beginning of your program: `#define NDEBUG`

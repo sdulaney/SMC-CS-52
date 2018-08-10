@@ -1,0 +1,28 @@
+CHAPTER 6: I/O STREAMS AS AN INTRODUCTION TO OBJECTS AND CLASSES
+
+- 6.1 Streams and Basic File I/O
+  - Why Use Files for I/O?
+  - File I/O
+  - Introduction to Classes and Objects
+  - Programming Tip: Check Whether a File Was Opened Successfully
+  - Techniques for File I/O
+  - Appending to a File (Optional)
+  - File Names as Input (Optional)
+- 6.2 Tools for Stream I/O
+  - Formatting Output with Stream Functions
+  - Manipulators
+  - Streams as Arguments to Functions
+  - Programming Tip: Checking for the End of a File
+  - A Note on Namespaces
+  - Programming Example: Cleaning Up a File Format
+- 6.3 Character I/O
+  - The Member Functions get and put
+  - The outback Member Function (Optional)
+  - Programming Example: Checking Input
+  - Pitfall: Unexpected '\n' in Input
+  - Programming Example: Another newLine Function
+  - Default Arguments for Functions (Optional)
+  - The eof Member Function
+  - Programming Example: Editing a Text File
+  - Predefined Character Functions
+  - Pitfall: toupper and tolower Return Values

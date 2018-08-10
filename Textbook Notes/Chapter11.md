@@ -1,0 +1,64 @@
+CHAPTER 11: FRIENDS, OVERLOADED OPERATORS, AND ARRAYS IN CLASSES
+
+- 11.1 Friend Functions
+  - For some operations, it is more natural to implement the operations as ordinary (nonmember) functions
+  - Programming Example: An Equality Function
+    - If you make equal a member function, you must decide whether the calling object should be the first date or the second date
+    - Rather than arbitrarily choosing one of the two dates as the calling object, we instead treated the two dates in the same way; we made equal an ordinary (nonmember) function that takes two dates as its arguments
+  - Friend Functions
+    - A friend function of a class is not a member function of the class, but a friend function has access to the private members of that class just as a member function does
+    - You make a function a friend of a class by listing the function declaration in the definition of the class and placing the keyword *friend* in front of the function declaration
+    - A friend is not a member function; it is just an ordinary function with extraordinary access to the data members of the class
+  - Programming Tip: Define Both Accessor Functions and Friend Functions
+    - In most situations, the only reason to make a function a friend is to make the definition of the function simpler and more efficient; but sometimes, that reason is enough
+  - Programming Tip: Use Both Member and Nonmember Functions
+    - In most cases, you can make a function either a member function or a friend and have it perform the same task in the same way
+    - A simple rule to decide between member functions and nonmember functions:
+      - Use a member function if the task being performed by the function involves only one object
+      - Use a nonmember function if the task being performed involves more than one object
+    - A more accurate but harder to understand rule:
+      - Use member functions if the task is intimately related to a single object
+      - Use a nonmember function when the task involves more than one object and the objects are used symmetrically
+  - Programming Example: Money Class (Version 1)
+    - The two names *long* and *long int* refer to the same type
+    - The result of integer division with negative numbers does not have a standard definition and can vary from one implementation to another
+    - To compute the absolute value, `labs` and `abs` are both in the library with header file `cstdlib`
+  - Implementation of digitToInt (Optional)
+  - Pitfall: Leading Zeros in Number Constants
+    - With some compilers, a leading zero means that the number is written in base 8 rather than base 10
+    - The ANSI C++ standard provides that input should default to being interpreted as decimal, regardless of the leading 0
+    - The GNU project C++ compiler, g++, and Microsoft's VC++ compiler do comply with the standard, and so they do not have a problem with leading zeros
+    - Most compiler vendors track the ANSI standard, so this problem with leading zeros should eventually go away
+  - The const Parameter Modifier
+    - A call-by-reference parameter is more efficient than a call-by-value parameter (with the former there is only one copy of the argument but with the latter there are two)
+    - Thus, it can make sense to use a call-by-reference parameter rather than a call-by-value parameter for a class, even if the function does not change the parameter
+    - If you are using a call-by-reference parameter and your function does not change the value of the parameter, you can mark the parameter so that the compilar knows that the parameter should not be changed by using the modifier *const* before the parameter type
+    - The parameter is then called a *constant parameter*
+    - When you use constant parameters, the modifier *const* must be used in both the function declaration and in the heading of the function definition
+    - Parameters of a class type that are not changed by the function ordinarily should be constant call-by-reference parameters, rather than call-by-value parameters
+    - The modifier *const* applies to calling objects in the same way that it applies to parameters:
+      - If you have a member function that should not change the value of a calling object, you can mark the function with the *const* modifier
+      - The *const* goes at the end of the function declaration, just before the final semicolon, and should also be included in the function definition
+  - Pitfall: Inconsistent Use of const
+    - Use of the *const* modifier is an all-or-nothing proposition
+      - You should use the *const* modifier whenever it is appropriate for a class parameter and whenever it is appropriate for a member function of the class
+      - If you do not use *const* every time it is appropriate for a class, then you should never use it for that class
+    - If you use *const* for one parameter of a particular type, then you should use it for every other parameter that has that type and that is not changed by the function call; moreover, if the type is a class type, then you should also use the *const* modifier for every member function that does not change the value of its calling object
+    - The reason has to do with function calls within function calls
+    - If you use *const* for a parameter of a class type but not a member function it uses, the compiler will give an error message because it cannot assume the member function does not change the object
+- 11.2 Overloading Operators
+  - Overloading Operators
+  - Constructors for Automatic Type Conversion
+  - Overloading Unary Operators
+  - Overloading >> and <<
+- 11.3 Arrays and Classes
+  - Arrays of Classes
+  - Arrays as Class Members
+  - Programming Example: A Class for a Partially Filled Array
+- 11.4 Classes and Dynamic Arrays
+  - Programming Example: A String Variable Class
+  - Destructors
+  - Pitfall: Pointers as Call-by-Value Parameters
+  - Copy Constructors
+  - Overloading the Assignment Operator
+

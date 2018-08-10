@@ -1,0 +1,42 @@
+CHAPTER 2: C++ BASICS
+
+- 2.1 Variables and Assignments
+  - Variables
+  - Names: Identifiers
+  - Variable Declarations
+  - Assignment Statements
+  - Pitfall: Uninitialized Variables
+  - Programming Tip: Use Meaningful Names
+- 2.2 Input and Output
+  - Output Using cout
+  - Include Directives and Namespaces
+  - Escape Sequences
+  - Programming Tip: End Each Program with a \n or endl
+  - Formatting for Numbers with a Decimal Point
+  - Input Using cin
+  - Designing Input and Output
+  - Programming Tip: Line Breaks in I/O
+- 2.3 Data Types and Expressions
+  - The Types int and double
+  - Other Number Types
+  - C++11 Types
+  - The Type char
+  - The Type bool
+  - Introduction to the Class string
+  - Type Compatibilities
+  - Arithmetic Operators and Expressions
+  - Pitfall: Whole Numbers in Division
+  - More Assignment Statements
+- 2.4 Simple Flow of Control
+  - A Simple Branching Mechanism
+  - Pitfall: String of Inequalities
+  - Pitfall: Using = in place of ==
+  - Compound Statements
+  - Simple Loop Mechanisms
+  - Increment and Decrement Operators
+  - Programming Example: Charge Card Balance
+  - Pitfall: Infinite Loops
+- 2.5 Program Style
+  - Indenting
+  - Comments
+  - Naming Constants

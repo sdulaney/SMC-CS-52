@@ -1,0 +1,30 @@
+CHAPTER 3: MORE FLOW OF CONTROL
+
+- 3.1 Using Boolean Expressions
+  - Evaluating Boolean Expressions
+  - Pitfall: Boolean Expressions Convert to int Values
+  - Enumeration Types (Optional)
+- 3.2 Multiway Branches
+  - Nested Statements
+  - Programming Tip: Use Braces in Nested Statements
+  - Multiway if-else Statements
+  - Programming Example: State Income Tax
+  - The switch Statement
+  - Pitfall: Forgetting a break in a switch Statement
+  - Using switch Statements for Menus
+  - Blocks
+  - Pitfall: Inadvertent Local Variables
+- 3.3 More About C++ Loop Statements
+  - The while Statements Reviewed
+  - Increment and Decrement Operators Revisited
+  - The for Statement
+  - Pitfall: Extra Semicolon in a for Statement
+  - What Kind of Loop to Use
+  - Pitfall: Unitialized Variables and Infinite Loops
+  - The break Statement
+  - Pitfall: The break Statement in Nested Loops
+- 3.4 Designing Loops
+  - Loops for Sums and Products
+  - Ending a Loop
+  - Nested Loops
+  - Debugging Loops

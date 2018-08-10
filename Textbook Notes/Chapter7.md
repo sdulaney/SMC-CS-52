@@ -1,0 +1,29 @@
+CHAPTER 7: ARRAYS
+
+- 7.1 Introduction to Arrays
+  - Declaring and Referencing Arrays
+  - Programming Tip: Use for Loops with Arrays
+  - Pitfall: Array Indexes Always Start with Zero
+  - Programming Tip: Use a Defined Constant for the Size of an Array
+  - Arrays in Memory
+  - Pitfall: Array Index Out of Range
+  - Initializing Arrays
+  - Programming Tip: C++11 Range-Based for Statement
+- 7.2 Arrays in Functions
+  - Indexed Variables as Function Arguments
+  - Entire Arrays as Function Arguments
+  - The const Parameter Modifier
+  - Pitfall: Inconsistent Use of const Parameters
+  - Functions That Return an Array
+  - Case Study: Production Graph
+- 7.3 Programming with Arrays
+  - Partially Filled Arrays
+  - Programming Tip: Do Not Skimp on Formal Parameters
+  - Programming Example: Searching an Array
+  - Programming Example: Sorting an Array
+  - Programming Example: Bubble Sort
+- 7.4 Multidimensional Arrays
+  - Multidimensional Array Basics
+  - Multidimensional Array Parameters
+  - Programming Example: Two-Dimensional Grading Program
+  - Pitfall: Using Commas Between Array Indexes
